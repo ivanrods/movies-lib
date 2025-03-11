@@ -4,6 +4,7 @@
     align-items: center;
     padding: 1rem 2rem;
     background-color: #121212;
+   
   }
   
   #navbar h2 a {
@@ -33,4 +34,11 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+  }
+
+
+  @media (max-width: 450px) {
+    #navbar h2 a {
+      display: none;
+    }
   }

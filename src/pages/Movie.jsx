@@ -21,12 +21,12 @@ const Movie = () => {
       console.error("Erro ao buscar filmes:", error);
     }
   };
-  const formatCurrency = (number) =>{
+  const formatCurrency = (number) => {
     return number.toLocaleString("es-US", {
-        style: "currency",
-        currency: "USD"
-    })
-  }
+      style: "currency",
+      currency: "USD",
+    });
+  };
   useEffect(() => {
     const movieUrl = `${moviesURL}${id}?api_key=${apiKey}`;
     getMovie(movieUrl);
